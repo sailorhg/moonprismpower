@@ -1,0 +1,116 @@
+body {
+  background-color: #191c4c;
+  font-family: 'mono-latin';
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #dfa725;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blog, .photo, .ds {
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+a {
+  color: #fff;
+  transition: color .5s ease;
+  text-decoration: underline;
+}
+
+td {
+  width: 300px;
+}
+
+h1 {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.blog-wrapper {
+  width: 363px;
+  display: inline-block;
+}
+
+.img-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog {
+  positon: relative;
+  left: 25px;
+}
+
+.logo {
+  margin-top: 100px;
+}
+
+.page-title {
+  margin-top: 20px;
+}
+
+.content-wrapper {
+  margin-top: 100px;
+}
+
+.about {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #242a55;
+  padding: 50px;
+}
+
+.organizers {
+  padding: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'mono-latin';
+  src: url('./fonts/lmmono10-italic.otf');
+}
+
+@media only screen and (max-width: 641px) {
+  .blog, .photo, .ds {
+    display: none;
+  }
+  .content-wrapper, .img-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .about {
+    width: auto;
+    padding: 50px;
+    padding-top: 0px;
+    background-color: transparent;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .star {
+    display: inline;
+  }
+}
